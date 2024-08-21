@@ -40,6 +40,7 @@ Update the following variables within the script:
 - **$From**: Define the sender's email address.
 - **$To**: Define recipient email addresses.
 - **$Cc**: (Optional) Specify any CC recipients.
+- **$percentage_to_check**: Update % if required.
 
 ### 4. Run the Script
 
@@ -92,7 +93,7 @@ To automate the script execution, you can schedule it using Windows Task Schedul
 
 ### 6. Check Email Alerts
 
-If any disks on the monitored servers fall below 20% free space, an email alert will be sent to the specified recipients with detailed information as shown in below screenshot.
+If any disks on the monitored servers fall below N% free space, an email alert will be sent to the specified recipients with detailed information as shown in below screenshot.
 
 ![image](https://github.com/user-attachments/assets/b21ca1cf-0f37-4d01-8a81-cbfea87de8af)
 
@@ -101,7 +102,7 @@ If any disks on the monitored servers fall below 20% free space, an email alert 
 
 1. **Log File Management**: The script checks and manages the size and age of log files, deleting them if necessary.
 2. **Disk Space Retrieval**: The script connects to each specified server and retrieves disk space information.
-3. **Alert Trigger**: If any disk has less than 20% free space, an email alert is triggered.
+3. **Alert Trigger**: If any disk has less than N% free space, an email alert is triggered.
 4. **Error Handling**: Errors are logged, and an error email is sent if the script encounters issues.
 
 ## License
